@@ -25,7 +25,16 @@ footer#document-footer, .campus-sub-footer
             li + li
                 margin-top: 0
             @include media-breakpoint-down(desktop)
+                flex-wrap: wrap
                 margin-top: space(8)
+            @include media-breakpoint-down(md)
+                li
+                    min-width: pxToRem(170)
+                    max-width: calc(50% - var(--grid-gutter))
+                    img
+                        max-height: pxToRem(40)
+            // @include media-breakpoint-down(sm)
+
 
 .campus-sub-footer
     background: var(--color-background)
