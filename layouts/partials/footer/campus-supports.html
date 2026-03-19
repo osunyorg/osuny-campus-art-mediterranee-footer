@@ -1,21 +1,23 @@
+{{ $suffix := site.Params.campus_art_mediterrannee_footer.logo.suffix }}
+
 <div class="container footer__supports">
   <ul>
-    <li><img src="/assets/images/footer/logo-culture.svg" alt="Soutenu par le Ministère de la Culture - Liberté, Égalité, Fraternité"></li>
-    <li><img src="/assets/images/footer/logo-marseille.svg" alt="Ville de Marseille"></li>
-    <li><img src="/assets/images/footer/campus-title.svg" alt="Campus art Méditerranée et ses établissements :"></li>
+    <li><img src="/assets/images/footer/logo-culture{{- $suffix -}}.svg" alt="Soutenu par le Ministère de la Culture - Liberté, Égalité, Fraternité"></li>
+    <li><img src="/assets/images/footer/logo-marseille{{- $suffix -}}.svg" alt="Ville de Marseille"></li>
+    <li><img src="/assets/images/footer/campus-title{{- $suffix -}}.svg" alt="Campus art Méditerranée et ses établissements :"></li>
     <li>
       <a href="https://www.beauxartsdemarseille.fr/" target="_blank" rel="noopener noreferrer">
-        <img src="/assets/images/footer/beaux-arts-de-marseille.svg" alt="Beaux Arts de Marseille">
+        <img src="/assets/images/footer/beaux-arts-de-marseille{{- $suffix -}}.svg" alt="Beaux Arts de Marseille">
       </a>
     </li>
     <li>
       <a href="https://www.conservatoiredemarseille.fr/" target="_blank" rel="noopener noreferrer">
-        <img src="/assets/images/footer/cpbm.svg" alt="Conservatoire Pierre Barbizet Marseille">
+        <img src="/assets/images/footer/cpbm{{- $suffix -}}.svg" alt="Conservatoire Pierre Barbizet Marseille">
       </a>
     </li>
     <li>
       <a href="https://www.campusartmediterranee.fr/letablissement/lifamm/" target="_blank" rel="noopener noreferrer">
-        <img src="/assets/images/footer/ifamm.svg" alt="IFAMM">
+        <img src="/assets/images/footer/ifamm{{- $suffix -}}.svg" alt="IFAMM">
       </a>
     </li>
   </ul>
