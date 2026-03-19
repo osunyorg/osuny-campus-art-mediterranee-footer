@@ -22,6 +22,10 @@ footer#document-footer, .campus-sub-footer
             gap: $spacing-4
             img
                 height: pxToRem(50)
+            li
+                a
+                    &::after, &::before
+                        display: none !important
             li + li
                 margin-top: 0
             @include media-breakpoint-down(desktop)
@@ -33,7 +37,6 @@ footer#document-footer, .campus-sub-footer
                     max-width: calc(50% - var(--grid-gutter))
                     img
                         max-height: pxToRem(40)
-            // @include media-breakpoint-down(sm)
 
 
 .campus-sub-footer
